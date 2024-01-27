@@ -36,6 +36,10 @@ const bookSchema =mongoose.Schema(
             type:Number,
             required:true
         },
+
+        coverUrl:{
+            type:String,
+        },
        
     }
 )
@@ -48,6 +52,7 @@ export const BooK = mongoose.model("Book",{
     Author:String,
     Ratings:Number,
     Price:Number,
+    coverUrl:String,
     Description:String
 
 })

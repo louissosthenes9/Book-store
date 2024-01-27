@@ -57,7 +57,8 @@ router.post('/', async (req, res) => {
             Price: req.body.Price,
             Ratings: req.body.Ratings,
             PublishYear: req.body.PublishYear,
-            Description: req.body.Description
+            Description: req.body.Description,
+            coverUrl: req.body.coverUrl
         }
 
        const book = await BooK.create(newBook)
